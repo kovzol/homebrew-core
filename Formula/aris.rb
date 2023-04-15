@@ -9,9 +9,13 @@ class Aris < Formula
   depends_on "cairo"
   depends_on "coreutils"
   depends_on "gtk+3"
-  depends_on "libxml2"
   depends_on "pango"
   depends_on "pkg-config"
+  uses_from_macos "libxml2"
+  
+  on_linud do
+    depends_on "libxml2"
+  end
 
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args
