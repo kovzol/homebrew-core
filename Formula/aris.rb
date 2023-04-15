@@ -13,7 +13,7 @@ class Aris < Formula
   depends_on "pkg-config"
   uses_from_macos "libxml2"
   
-  on_linud do
+  on_linux do
     depends_on "libxml2"
   end
 
