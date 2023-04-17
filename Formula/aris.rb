@@ -12,7 +12,7 @@ class Aris < Formula
   depends_on "pango"
   depends_on "pkg-config"
   uses_from_macos "libxml2"
-  
+
   on_linux do
     depends_on "libxml2"
   end
@@ -24,6 +24,8 @@ class Aris < Formula
   end
 
   test do
-    system "#{bin}/aris", "--help"
+    output = shell_output("#{bin}/aris -t ~~A")
+    assert_match "Correct!", output
   end
+
 end
