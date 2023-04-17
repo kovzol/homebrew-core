@@ -27,5 +27,4 @@ class Aris < Formula
     output = shell_output("#{bin}/aris -t ~~A")
     assert_match "Correct!", output
   end
-
 end
