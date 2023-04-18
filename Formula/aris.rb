@@ -13,10 +13,6 @@ class Aris < Formula
   depends_on "pkg-config"
   uses_from_macos "libxml2"
 
-  on_linux do
-    depends_on "libxml2"
-  end
-
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args
     system "cmake", "--build", "build"
