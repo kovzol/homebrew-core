@@ -1,4 +1,4 @@
-class XaoS < Formula
+class xaos < Formula
   desc "Real interactive fractal zoomer"
   homepage "https://xaos-project.github.io/"
   url "https://github.com/xaos-project/XaoS/archive/refs/tags/4.3.2-cmake.tar.gz"
