@@ -5,6 +5,11 @@ class Xaos < Formula
   sha256 "1abb14b4ccb2cf12d8ff3bac787b1bc4f956bf15419d2fdcdc466ffe3e45ce65"
   license "GPL-2.0"
 
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
+
   depends_on "cmake" => :build
   depends_on "qt"
 
