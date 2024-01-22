@@ -1,8 +1,8 @@
 class Xaos < Formula
   desc "Real interactive fractal zoomer"
   homepage "https://xaos-project.github.io/"
-  url "https://github.com/xaos-project/XaoS/archive/refs/tags/4.3.2-cmake.tar.gz"
-  sha256 "788197afce06bbaabe55af4c98080d8c0878d0a2faa5d57e2b74dcbb0bdb381d"
+  url "https://github.com/xaos-project/XaoS/archive/refs/tags/4.3.2-cmake2.tar.gz"
+  sha256 "1abb14b4ccb2cf12d8ff3bac787b1bc4f956bf15419d2fdcdc466ffe3e45ce65"
   license "GPL-2.0"
 
   depends_on "cmake" => :build
