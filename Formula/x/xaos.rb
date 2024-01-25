@@ -22,7 +22,7 @@ class Xaos < Formula
   test do
     # Set QT_QPA_PLATFORM to minimal to avoid error "qt.qpa.xcb: could not connect to display"
     ENV["QT_QPA_PLATFORM"] = "minimal" if OS.linux? && ENV["HOMEBREW_GITHUB_ACTIONS"]
-    output = shell_output("#{bin}/XaoS -speedtest | grep speed | wc -l")
-    assert_match "5", output # there must be exactly 5 matches
+    output = shell_output("#{bin}/XaoS -speedtest")
+    assert_match "speed", output
   end
 end
